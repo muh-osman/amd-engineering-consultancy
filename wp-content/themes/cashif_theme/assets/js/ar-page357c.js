@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Hide WhatsApp Btn
 const whatsappBtn = document.getElementById("whatsapp-btn");
+// Hide Call Btn
+const callBtn = document.getElementById("call-btn");
 
 window.addEventListener("scroll", function () {
   let scrollPosition = window.scrollY || window.pageYOffset;
@@ -26,7 +28,9 @@ window.addEventListener("scroll", function () {
 
   if (scrollPosition >= documentHeight) {
     whatsappBtn.classList.add("hide-btn");
+    callBtn.classList.add("hide-btn");
   } else {
     whatsappBtn.classList.remove("hide-btn");
+    callBtn.classList.remove("hide-btn");
   }
 });
