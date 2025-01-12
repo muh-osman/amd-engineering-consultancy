@@ -349,8 +349,10 @@ ul {
   justify-content: center;
   align-items: center;
   border-radius: 50px;
+  gap: 9px;
   background-color: #99865c;
   color: #fff;
+  fill: #fff;
   font-size: 18px;
   margin: 48px 0 0;
   transition: 0.2s;
@@ -358,10 +360,15 @@ ul {
   border: 1px solid transparent;
 }
 
+.discount-bttn svg {
+  width: 19px;
+}
+
 .discount-bttn:hover {
   background-color: #203840;
-  border: 1px solid #e2d399;
+  /* border: 1px solid #e2d399; */
   color: #e2d399;
+  fill: #e2d399;
 }
 
 @media (max-width: 768px) {
@@ -1975,9 +1982,9 @@ form {
   transition: 0.2s;
 }
 
-/* .hide-btn {
+.hide-btn {
   bottom: -66px;
-} */
+}
 
 .sticky-icon::before {
   content: "";
